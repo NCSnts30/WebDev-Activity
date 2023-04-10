@@ -475,71 +475,122 @@ section {
   text-align: right;
 }
 
-.faculty{
-  padding: 10rem;
-  background-color: #7b9172;
+.faculty {
+  position: relative;
+  color: #ffffff;
+  padding: 10em;
+  text-align: center; /* Center all text */
 }
 
-.slider-container {
-  position: relative;
-  width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
-  overflow: hidden;
+.faculty h2 {
+  margin-top: 0; /* Remove default top margin */
+  display: inline-block;
+}
+
+.faculty::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('/assets/coece.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: brightness(50%);
+  z-index: -1;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .slider {
-  display: flex;
-  width: calc(100% * 1);
-  transition: transform 0.5s ease;
+    display: flex;
+    background: #085684;
+    color: #000;
+    padding: 2em;
+    text-align: center;
+    justify-content: space-between;
 }
 
-.slide {
-  flex: 1;
-  width: 100%;
-  padding: 20px;
+.nw2 {
+  display: flex;
+  background: #085684;
+  color: #ffffff;
+  padding: 1em;
   text-align: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.slide img {
-  display: block;
-  width: 150px;
-  height: 150px;
-  margin: 0 auto 10px;
-  border-radius: 50%;
+
+
+.slider h3 {
+	margin: 10px 0;
 }
 
-.slide h3 {
-  margin-top: 0;
-  font-size: 24px;
+.slider h6 {
+	margin: 5px 0;
+	text-transform: uppercase;
 }
 
-.slide p {
-  font-size: 16px;
+.slider p {
+	font-size: 14px;
+	line-height: 21px;
 }
 
-.slider-controls {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-}
-
-.slider-controls button {
+.card-container {
+	background-color: #231E39;
+	border-radius: 5px;
+	box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
+	color: #B3B8CD;
+	padding-top: 30px;
+	position: relative;
+	width: 350px;
+	max-width: 100%;
+	text-align: center;
   display: inline-block;
-  width: 30px;
-  height: 30px;
-  margin: 0 10px;
-  border: none;
-  border-radius: 50%;
-  background-color: #ccc;
-  color: #fff;
-  font-size: 16px;
-  cursor: pointer;
+  margin-right: 20px;
 }
 
-.prev-slide {
-  transform: rotate(180deg);
+.card-container .pro {
+	color: #231E39;
+	background-color: #FEBB0B;
+	border-radius: 3px;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 3px 7px;
+	position: absolute;
+	top: 30px;
+	left: 30px;
 }
 
+.card-container .round {
+	border: 1px solid #03BFCB;
+	border-radius: 50%;
+	padding: 7px;
+}
+
+
+.skills {
+	background-color: #1F1A36;
+	text-align: left;
+	padding: 15px;
+	margin-top: 30px;
+}
+
+.skills ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.skills ul li {
+	border: 1px solid #2D2747;
+	border-radius: 2px;
+	display: inline-block;
+	font-size: 12px;
+	margin: 0 7px 7px 0;
+	padding: 7px;
+}
