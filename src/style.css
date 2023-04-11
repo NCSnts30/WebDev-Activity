@@ -453,7 +453,7 @@ section {
   background-image: url('/assets/header.jpg');
   background-size: cover;
   background-position: center;
-  filter: brightness(70%) blur(50%);
+  filter: brightness(70%) blur(50%) grayscale(100%);
   padding: 15rem;
   font-size: 50px;
   font-weight: 700;
@@ -461,10 +461,6 @@ section {
   text-shadow: #ff5900 0px 0px 10px;
   color: #000000;
   background-color: #4285f4;
-  z-index: -1;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 
@@ -663,3 +659,65 @@ section {
 }
 
 /*apply page design*/ 
+
+.bg{
+  background-image: url('/assets/bgapp2.jpg');
+  background-attachment: fixed;
+  position: fixed;
+  padding: 90rem;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+  margin: 1 auto; /* center the container horizontally */
+}
+.form{
+  background: #e57f26;
+  position: absolute;
+  padding: 90px;
+  margin-top: 90px;
+  margin-bottom: 80px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+  max-width: 600px; /* adjust the value as needed */
+  margin: 1 auto; /* center the container horizontally */
+}
+
+
+.form h1{
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 20px;
+}
+
