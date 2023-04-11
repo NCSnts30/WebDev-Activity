@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ECE DEPARTMENT</title>
+  </head>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-+jU6R9G7Vr0Ckq3rVqlmWjPx+WIXZYiUTw2TbxTcxWfT8X9WSPlxAWxmgA59dHuzkA8hVbU6n1U6vBYnPXZuUQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <body>
+    <div class="navbar">
+      <a href="./home.html">
+        <div>
+          <img src="/assets/ECE.png" alt="logo" width="175" height="100" />
+        </div>
+      </a>
+      <ul>
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="apply.html">APPLY</a></li>
+      </ul>
+    </div>
+    <div class="bg"></div>
+    <form>
+      <div class="form">
+        <h1>INTERESTED?</h1>
+        <p>Please fill in this form to apply for the ECE department.</p>
+        <hr />
+
+        <label for="name"><b>Name</b></label>
+        <input type="text" placeholder="Enter Name" name="name" required />
+
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required />
+
+        <label for="phone"><b>Phone</b></label>
+        <input type="text" placeholder="Enter Phone" name="phone" required />
+
+        <label for="address"><b>Address</b></label>
+        <input
+          type="text"
+          placeholder="Enter Address"
+          name="address"
+          required
+        />
+
+        <label for="city"><b>City</b></label>
+        <input type="text" placeholder="Enter City" name="city" required />
+
+        <label for="state"><b>State</b></label>
+        <input type="text" placeholder="Enter State" name="state" required />
+
+        <label for="zip"><b>Zip</b></label>
+        <input type="text" placeholder="Enter Zip" name="zip" required />
+
+        <label for="gpa"><b>School</b></label>
+        <input type="text" placeholder="Enter GPA" name="gpa" required />
+
+        <label for="sat"><b>Enter Highschool GPA</b></label>
+        <input type="text" placeholder="Enter GPA" name="sat" required />
+
+        <label for="transcript"
+          ><b>Upload Transcript of Records (SHS Report Card)</b></label
+        >
+        <input
+          title="Upload Transcript of Records (SHS Report Card)"
+          type="file"
+          name="transcript"
+          accept=".pdf,.doc,.docx,.jpg,.jpeg,.png"
+          required
+        />
+
+        <label for="recommendation"><b>Why do you want to join ECE?</b></label>
+        <input
+          type="text"
+          placeholder="Enter Recommendation  "
+          name="recommendation"
+          required
+        />
+        <button type="submit" class="registerbtn">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
