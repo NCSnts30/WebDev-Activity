@@ -55,50 +55,48 @@ h1 {
     transition: 0.3s;
   }
   
-  
   .navbar {
-    position: fixed;
-    display: flex;
-    top: 0;
-    width: 100%;
-    z-index: 9999;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #000000;
-    color: #fff;
-    padding: 10px;
-  }
-  
-  .navbar ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 20px; /* add some margin */
-  }
-  
-  
-  .navbar li {
-    margin: 0 10px;
-  }
-  
-  .navbar a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
-  .navbar a:hover {
-    text-decoration: underline;
-    color: #ffa500;
-  }
-  
-  .navbar img {
-    margin-right: auto;
-  }
-  
+  position: fixed;
+  display: flex;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black; /* Set background color to transparent */
+  color: #fff;
+  padding: 8px;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 1em; /* add some margin */
+}
+
+.navbar li {
+  margin: 0 150px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+  color: #ffa500;
+}
+
+.navbar img {
+  margin-right: auto;
+}
+
   /*header design*/ 
 
   .header {
@@ -115,10 +113,10 @@ h1 {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('/assets/p1.jpg');
+    background: linear-gradient(46deg, rgba(247, 156, 45, 0.5), rgb(35, 57, 180)), url('/assets/p1.jpg');
     background-size: cover;
     background-position: center;
-    filter: grayscale(100%) brightness(50%);
+    filter: brightness(90%); 
     z-index: -1;
     background-attachment: fixed;
     background-position: center;
@@ -202,6 +200,43 @@ h1 {
   }
 }
  
+.location {
+  padding: 10em;
+  background-repeat: no-repeat;
+  background-image: url(/assets/map.jpg);
+  background-size: 50rem;
+  position: relative;
+  overflow: hidden;
+  margin-top: 5em;
+  margin-left: 10em;
+  margin-right: 10em;
+  margin-bottom: 2em;
+  image-orientation: calc();
+  text-align: right;
+}
+
+.location h5 {
+  font-size: 4em;
+  position: relative;
+  margin-top: 0%;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  color: #000;
+  text-align: right;
+  font-style: italic;
+}
+
+.location h6 {
+  font-size: 1.10em;
+  position: relative;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  text-align: right;
+  color: #000;
+  font-display: swap;
+}
+
+
 /*last section design*/ 
 .lastsec {
   position: relative;
@@ -450,18 +485,18 @@ section {
 /*about us page design*/ 
 .abouthead{
   position: relative;
-  background-image: url('/assets/header.jpg');
+  background-image:  url('/assets/header.jpg');
   background-size: cover;
   background-position: center;
-  filter: brightness(70%) blur(50%) grayscale(100%);
+  filter: brightness(100%) saturate(67%) contrast(100%) hue-rotate(0deg);
   padding: 15rem;
   font-size: 50px;
   font-weight: 700;
   text-align: left;
-  text-shadow: #ff5900 0px 0px 10px;
+  text-shadow: 0px 0px 10px #ff5900;
   color: #000000;
-  background-color: #4285f4;
 }
+
 
 
 .services{
@@ -719,4 +754,18 @@ input[type="submit"]:hover {
 hr {
   border: 1px solid #f1f1f1;
   margin-bottom: 20px;
+}
+
+.name-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.name-container label {
+  flex: 1;
+  margin-right: 10px;
+}
+.name-container input {
+  flex: 2;
 }
