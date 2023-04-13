@@ -113,7 +113,7 @@ h1 {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(46deg, rgba(247, 156, 45, 0.5), rgb(35, 57, 180)), url('/assets/p1.jpg');
+    background: linear-gradient(1deg, rgba(247, 156, 45, 0.5), rgb(35, 57, 180)), url('/assets/COEBanner1.jpg');
     background-size: cover;
     background-position: center;
     filter: brightness(90%); 
@@ -252,7 +252,7 @@ h1 {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('/assets/p2.jpg');
+  background-image: url('/assets/bg3.jpg');
   background-size: cover;
   background-position: center;
   filter: brightness(50%);
@@ -303,7 +303,7 @@ section {
 }
 
 .footer-distributed{
-	background: #000000;
+	background: #001833;
 	box-shadow: 0 1px 1px 0 rgba(255, 255, 255, 0.12);
 	box-sizing: border-box;
 	width: 100%;
@@ -485,7 +485,7 @@ section {
 /*about us page design*/ 
 .abouthead{
   position: relative;
-  background-image:  url('/assets/header.jpg');
+  background-image:  url('/assets/p2.jpg');
   background-size: cover;
   background-position: center;
   filter: brightness(100%) saturate(67%) contrast(100%) hue-rotate(0deg);
@@ -592,7 +592,7 @@ section {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('/assets/coece.jpg');
+  background-image: url('/assets/bg4.jpg');
   background-size: cover;
   background-position: center;
   filter: brightness(50%);
